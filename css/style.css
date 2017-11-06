@@ -1,0 +1,197 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	color: #212121;
+	font: 400 12px/1 'Manuale', serif;
+}
+/*Reset start*/
+
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+}
+ul, ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+/*Reset end*/
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding:  0 20px;
+}
+.header{
+	overflow: hidden;
+	padding: 20px 0;
+	border-bottom: 2px solid #00e9ba;
+	box-shadow: 0 3px 10px rgba(0, 233, 186, .2);
+	position: fixed;
+	width: 100%; /*или left: 0; right: 0*/
+	top: 0;
+	background-color: #fff;
+	z-index: 999;
+}
+.logo{
+	float: left;
+}
+.navigetion {
+	float: right;
+}
+.navigetion li{
+	font-size: 16px;
+	font-weight: 700;
+	float: left;
+	line-height: 44px;
+}
+.navigetion li::before,
+.navigetion li::after{
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 0 5px;
+	background-color: #00e9ba;
+}
+.navigetion li + li{
+	margin: 0 20px;
+}
+.navigetion li a:hover{
+	color: #01e9b9
+}
+/*MAIN START*/
+.main{
+	padding-top: 86px;
+}
+.title{
+	text-align: center;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.standart-section{
+	padding: 80px 0;
+}
+/*MAIN END*/
+.lesson-row{
+	margin: 0 -15px;
+}
+.lesson-col{
+	width: 33.3333%;
+	padding: 0 15px;
+	float: left;
+	margin-bottom: 90px;
+}
+.lesson .lesson-bg{
+	display: block;
+	height: 366px;
+}
+.lesson{
+	position: relative;
+	box-shadow: 0 13px 27px rgba(0, 0, 0, .13);
+}
+.hit-lesson::before, .new-lesson::before{
+	content: "Хит";
+	padding: 10px 35px;
+	background-color: #fffd00;
+	box-shadow: 0 13px 27px rgba(0, 0, 0, .13);
+	color: #212121;
+	font-size: 16px;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+.new-lesson::before{
+	content: "Новинка";
+	background-color: #9fff51;
+}
+.lesson .lesson-start-date{
+	position: absolute;
+	top: -40px;
+	right: 20px;
+	width: 84px;
+	background-color: #fdd835;
+	font-size: 16px;
+	line-height: 1.25;/*(25px)*/
+	text-align: center;
+	padding: 22px 14px;
+	border-radius: 50%;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, .13);
+/*	max-height: 84px;- на всякий случай можно + если вдруг блок будет прыгать */
+}
+.lesson-bg.angular{background: url('../img/lesson-angular-bg.png') no-repeat center #fbfbfb;}
+.lesson-bg.ppc{background: url('../img/lesson-ppc-bg.png') no-repeat center #fbfbfb;}
+.lesson-bg.bg-green{background-color: rgba(0, 233, 183, .4);}
+.lesson-description{
+	padding: 20px;
+}
+.lesson-description .lesson-title{
+	text-transform: uppercase;
+	font-size: 21px;
+	font-weight: 700;
+	margin: 0 0 20px 0;
+}
+.lesson-description .lesson-price{
+	font-size: 30px;
+	text-align: right;
+	color: #00e9ba;
+	font-weight: 700;
+}
+.about-us-text{
+	font-size: 18px;
+	line-height: 1.3;
+	padding: 0 100px;
+
+}
+.text-center{
+	text-align: center;	
+}
+––.about-us .btn-row{
+	margin-top: 30px;
+}
+.btn{
+	display: inline-block;
+	padding: 16px 60px ;
+	font-size: 14px;
+	font-weight: 400px;
+	border: 2px solid transparent;
+	border-radius: 50px;
+	cursor: pointer;
+	color: #212121;
+}
+.btn + .btn{
+	margin-left: 15px;
+}
+.btn.btn-default{
+	background-color: #fffd00;
+	border-color: #fffd00;
+	box-shadow: 0 8px 15px rgba(255, 253, 0, .5); 
+}
+.btn.btn-default:hover,
+.btn.btn-success:hover,
+.btn.btn-warning:hover{
+	background-color:#fff;
+}
+.btn.btn-success{
+	background-color: #10ff11;
+	border-color: #10ff11;
+	box-shadow: 0 8px 15px rgba(16, 253, 17, .5); 
+}
+.btn.btn-warning{
+	background-color: #e60808;
+	border-color:#e60808;
+	box-shadow: 0 8px 15px rgba(230, 8, 0, .5); 
+}
+
+
+
+
+
+
